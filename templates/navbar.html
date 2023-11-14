@@ -1,0 +1,20 @@
+{% load static %}
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      
+      <nav class="header__nav navbar-expand">
+        <a href="{% url 'profiles' %}" class="header__logo">
+          <img src="{% static 'images/logo.png' %}" alt="DevSearch Logo" />
+        </a>
+        <ul class="header__menu", style="list-style: none;">
+          <li class="header__menuItem"><a href="{% url 'profiles' %}" class="navItem">Developers</a></li>
+          <li class="header__menuItem"><a href="{% url 'projects' %}" class="navItem">Projects</a></li>
+          <li class="header__menuItem"><a href="" class="navItem">Inbox</a></li>
+          <li class="header__menuItem"><a href="{% url 'create-project' %}" class="navItem">Add Project</a></li>
+          <li class="header__menuItem"><a href="" class="btn btn--sub">Login/Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
